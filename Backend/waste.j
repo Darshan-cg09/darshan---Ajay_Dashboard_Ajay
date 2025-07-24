@@ -71,18 +71,18 @@ const logger = winston.createLogger({
 });
 
 const allowedOrigins = [
-  'http://44.223.23.145:8012',
-  'http://44.223.23.145:8013',
-  'http://44.223.23.145:8057',
-  'http://44.223.23.145:8010',
-  'http://44.223.23.145:3404',
-  'http://127.0.0.1:5500',
-  'http://127.0.0.1:5502',
-  'http://localhost:8012',
-  'http://localhost:8013',
-  'http://localhost:8057',
-  'http://localhost:8010',
-  process.env.FRONTEND_URL || 'http://44.223.23.145:3404',
+  'http://13.60.26.108:8012',
+  'http://13.60.26.108:8013',
+  'http://13.60.26.108:8057',
+  'http://13.60.26.108:8010',
+  'http://13.60.26.108:3404',
+  'http://13.60.26.108:5500',
+  'http://13.60.26.108:5502',
+  'http://13.60.26.108:8012',
+  'http://13.60.26.108:8013',
+  'http://13.60.26.108:8057',
+  'http://13.60.26.108:8010',
+  process.env.FRONTEND_URL || 'http://13.60.26.108:3404',
 ];
 
 app.use(cors({
@@ -241,7 +241,7 @@ wss.on('connection', (ws) => {
   });
 });
 
-logger.info(`WebSocket server running on ws://44.223.23.145:${WS_PORT}`);
+logger.info(`WebSocket server running on ws://13.60.26.108:${WS_PORT}`);
 
 async function initializeDatabase() {
   const client = await pool.connect();

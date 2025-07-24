@@ -37,7 +37,7 @@ services:
     networks:
       - app_network
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3404/health"]
+      test: ["CMD", "curl", "-f", "http://13.60.26.108:3404/health"]
       interval: 10s
       timeout: 5s
       retries: 3
