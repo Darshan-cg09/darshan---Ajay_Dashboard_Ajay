@@ -70,7 +70,7 @@ services:
       context: ./Frontend/forgot
       dockerfile: Dockerfile
     ports:
-      - "8010:80"
+      - "8018:80"
     restart: unless-stopped
     networks:
       - app_network
