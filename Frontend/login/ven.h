@@ -913,7 +913,7 @@
         <button type="submit" class="login-button">Login</button>
       </form>
       <div class="links">
-        <a href="http://13.60.26.108:8013/">Sign Up</a> | <a href="http://13.60.26.108:8010">Forgot Password?</a>
+        <a href="http://51.21.167.202:8013/">Sign Up</a> | <a href="http://51.21.167.202:8010">Forgot Password?</a>
       </div>
     </div>
   </div>
@@ -981,7 +981,7 @@
       </div>
 
       <div class="content-area">
-        <iframe id="contentFrame" src="http://13.60.26.108:8020/" loading="lazy"></iframe>
+        <iframe id="contentFrame" src="http://51.21.167.202:8020/" loading="lazy"></iframe>
       </div>
     </div>
   </div>
@@ -989,21 +989,21 @@
   <script>
     document.addEventListener('DOMContentLoaded', async () => {
       const config = {
-        apiBaseUrl: 'http://13.60.26.108:3404/api',
+        apiBaseUrl: 'http://51.21.167.202:3404/api',
         authUrls: {
-          login: 'http://13.60.26.108:8012',
-          signup: 'http://13.60.26.108:8013/',
-          forgotPassword: 'http://13.60.26.108:8010'
+          login: 'http://51.21.167.202:8012',
+          signup: 'http://51.21.167.202:8013/',
+          forgotPassword: 'http://51.21.167.202:8010'
         },
         modules: {
-          attendance: 'http://13.60.26.108:7100/',
-          leave: 'http://13.60.26.108:8037/',
-          wfh: 'http://13.60.26.108:8026/',
-          recruitment: 'http://13.60.26.108:8024/',
-          payslip: 'http://13.60.26.108:8047/',
-          tasks: 'http://13.60.26.108:8133/',
-          offboarding: 'http://13.60.26.108:8035/',
-          helpdesk: 'http://13.60.26.108:8042/'
+          attendance: 'http://51.21.167.202:7100/',
+          leave: 'http://51.21.167.202:8037/',
+          wfh: 'http://51.21.167.202:8026/',
+          recruitment: 'http://51.21.167.202:8024/',
+          payslip: 'http://51.21.167.202:8047/',
+          tasks: 'http://51.21.167.202:8133/',
+          offboarding: 'http://51.21.167.202:8035/',
+          helpdesk: 'http://51.21.167.202:8042/'
         },
         sessionCheckInterval: 300000
       };

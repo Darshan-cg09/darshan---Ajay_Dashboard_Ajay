@@ -1003,7 +1003,7 @@
         <button type="submit" class="login-button">Login</button>
       </form>
       <div class="links">
-        <a href="http://13.60.26.108:8013/">Sign Up</a> | <a href="http://13.60.26.108:8010">Forgot Password?</a>
+        <a href="http://51.21.167.202:8013/">Sign Up</a> | <a href="http://51.21.167.202:8010">Forgot Password?</a>
       </div>
     </div>
   </div>
@@ -1157,55 +1157,55 @@
 
     <!-- Main Content -->
     <main class="main-content" id="mainContent">
-      <iframe id="contentFrame" src="http://13.60.26.108:7999/" loading="lazy"></iframe>
+      <iframe id="contentFrame" src="http://51.21.167.202:7999/" loading="lazy"></iframe>
     </main>
   </div>
 
   <script>
     document.addEventListener('DOMContentLoaded', async () => {
       const config = {
-        apiBaseUrl: 'http://13.60.26.108:3404/api',
+        apiBaseUrl: 'http://51.21.167.202:3404/api',
         authUrls: {
-          login: 'http://13.60.26.108:8012',
-          signup: 'http://13.60.26.108:8013/',
-          forgotPassword: 'http://13.60.26.108:8010'
+          login: 'http://51.21.167.202:8012',
+          signup: 'http://51.21.167.202:8013/',
+          forgotPassword: 'http://51.21.167.202:8010'
         },
         modules: {
-          emp_attendance: 'http://13.60.26.108:8051/',
-          emp_leave: 'http://13.60.26.108:8037/',
-          emp_wfh: 'http://13.60.26.108:8025/',
-          emp_payslip: 'http://13.60.26.108:7019/',
-          emp_tasks: 'http://13.60.26.108:8045/',
-          emp_helpdesk: 'http://13.60.26.108:8049/',
-          emp_Onboarding: 'http://13.60.26.108:8039/',
-          emp_benefits: 'http://13.60.26.108:8043/',
-          emp_Appraisal: 'http://13.60.26.108:8014/',
-          emp_notifications: 'http://13.60.26.108:8053/',
-          emp_asset: 'http://13.60.26.108:8047/',
-          emp_bonus: 'http://13.60.26.108:8055/',
-          emp_joblists: 'http://13.60.26.108:8020/',
-          emp_claim: 'http://13.60.26.108:8027/',
-          emp_offboarding: 'http://13.60.26.108:8041/',
-          emp_jobapplication: 'http://13.60.26.108:8031/',
-          emp_offerletter: 'http://13.60.26.108:8033/',
+          emp_attendance: 'http://51.21.167.202:8051/',
+          emp_leave: 'http://51.21.167.202:8037/',
+          emp_wfh: 'http://51.21.167.202:8025/',
+          emp_payslip: 'http://51.21.167.202:7019/',
+          emp_tasks: 'http://51.21.167.202:8045/',
+          emp_helpdesk: 'http://51.21.167.202:8049/',
+          emp_Onboarding: 'http://51.21.167.202:8039/',
+          emp_benefits: 'http://51.21.167.202:8043/',
+          emp_Appraisal: 'http://51.21.167.202:8014/',
+          emp_notifications: 'http://51.21.167.202:8053/',
+          emp_asset: 'http://51.21.167.202:8047/',
+          emp_bonus: 'http://51.21.167.202:8055/',
+          emp_joblists: 'http://51.21.167.202:8020/',
+          emp_claim: 'http://51.21.167.202:8027/',
+          emp_offboarding: 'http://51.21.167.202:8041/',
+          emp_jobapplication: 'http://51.21.167.202:8031/',
+          emp_offerletter: 'http://51.21.167.202:8033/',
           emp_logout: '',
-          hr_attendance: 'http://13.60.26.108:8052/',
-          hr_leave: 'http://13.60.26.108:8038/',
-          hr_wfh: 'http://13.60.26.108:8026/',
-          hr_payslip: 'http://13.60.26.108:7020/',
-          hr_tasks: 'http://13.60.26.108:8046/',
-          hr_helpdesk: 'http://13.60.26.108:8050/',
-          hr_Onboarding: 'http://13.60.26.108:8040/',
-          hr_employeemanagement: 'http://13.60.26.108:8036/',
-          hr_benefits: 'http://13.60.26.108:8044/',
-          hr_appraisal: 'http://13.60.26.108:8015/',
-          hr_notifications: 'http://13.60.26.108:8054/',
-          hr_asset: 'http://13.60.26.108:8048/',
-          hr_bonus: 'http://13.60.26.108:8056/',
-          hr_joblists: 'http://13.60.26.108:8021/',
-          hr_claim: 'http://13.60.26.108:8028/',
-          hr_offboarding: 'http://13.60.26.108:8042/',
-          hr_jobapplication: 'http://13.60.26.108:8032/',
+          hr_attendance: 'http://51.21.167.202:8052/',
+          hr_leave: 'http://51.21.167.202:8038/',
+          hr_wfh: 'http://51.21.167.202:8026/',
+          hr_payslip: 'http://51.21.167.202:7020/',
+          hr_tasks: 'http://51.21.167.202:8046/',
+          hr_helpdesk: 'http://51.21.167.202:8050/',
+          hr_Onboarding: 'http://51.21.167.202:8040/',
+          hr_employeemanagement: 'http://51.21.167.202:8036/',
+          hr_benefits: 'http://51.21.167.202:8044/',
+          hr_appraisal: 'http://51.21.167.202:8015/',
+          hr_notifications: 'http://51.21.167.202:8054/',
+          hr_asset: 'http://51.21.167.202:8048/',
+          hr_bonus: 'http://51.21.167.202:8056/',
+          hr_joblists: 'http://51.21.167.202:8021/',
+          hr_claim: 'http://51.21.167.202:8028/',
+          hr_offboarding: 'http://51.21.167.202:8042/',
+          hr_jobapplication: 'http://51.21.167.202:8032/',
           hr_logout: ''
         },
         sessionCheckInterval: 300000

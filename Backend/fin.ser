@@ -80,14 +80,14 @@ logger.info('Environment Configuration:', {
 
 // Server Configuration
 const allowedOrigins = [
-  'http://13.60.26.108:8012', // Login
-  'http://13.60.26.108:8013', // Signup
-  'http://13.60.26.108:8010', // Forgot
-  'http://13.60.26.108:8011', // Dashboard
-  'http://13.60.26.108:3401', // Backend
-  'http://13.60.26.108:5500',
-  'http://13.60.26.108:5502',
-  process.env.FRONTEND_URL || 'http://13.60.26.108:8012',
+  'http://51.21.167.202:8012', // Login
+  'http://51.21.167.202:8013', // Signup
+  'http://51.21.167.202:8010', // Forgot
+  'http://51.21.167.202:8011', // Dashboard
+  'http://51.21.167.202:3401', // Backend
+  'http://51.21.167.202:5500',
+  'http://51.21.167.202:5502',
+  process.env.FRONTEND_URL || 'http://51.21.167.202:8012',
 ];
 
 // Enhanced CORS setup
@@ -253,7 +253,7 @@ async function handleTokenRefresh(req, res, next) {
       secure: process.env.NODE_ENV === 'production',
       sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'strict',
       maxAge: 15 * 60 * 1000,
-      domain: '13.60.26.108'
+      domain: '51.21.167.202'
     });
 
     req.user = decoded;
@@ -499,7 +499,7 @@ app.post('/api/login', async (req, res) => {
       secure: process.env.NODE_ENV === 'production',
       sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'strict',
       maxAge: 15 * 60 * 1000,
-      domain: '13.60.26.108'
+      domain: '51.21.167.202'
     });
 
     res.cookie('refreshToken', refreshToken, {
@@ -507,7 +507,7 @@ app.post('/api/login', async (req, res) => {
       secure: process.env.NODE_ENV === 'production',
       sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'strict',
       maxAge: 7 * 24 * 60 * 60 * 1000,
-      domain: '13.60.26.108'
+      domain: '51.21.167.202'
     });
 
     const { password: _, ...userData } = user;
@@ -621,11 +621,11 @@ app.post('/api/logout', verifyToken, async (req, res) => {
     await pool.query('DELETE FROM sessions WHERE token = $1', [refreshToken]);
 
     res.clearCookie('accessToken', {
-      domain: '13.60.26.108',
+      domain: '51.21.167.202',
       path: '/'
     });
     res.clearCookie('refreshToken', {
-      domain: '13.60.26.108',
+      domain: '51.21.167.202',
       path: '/'
     });
 
